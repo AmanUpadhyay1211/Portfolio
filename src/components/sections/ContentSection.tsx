@@ -70,8 +70,7 @@ const ContentSection: React.FC = () => {
             Content Creator
           </h2>
           <p className="section-description text-lg text-center text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12">
-            Sharing knowledge and insights through engaging video tutorials and educational content.
-            My mission is to make complex technical concepts accessible to everyone.
+            I create YouTube videos as a hobby, sharing movie reviews, explanations, and technical tutorials. My channel is a blend of entertainment and education, making complex topics and stories accessible to everyone.
           </p>
 
           <div className="content-stats grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">

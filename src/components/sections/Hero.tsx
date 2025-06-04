@@ -10,11 +10,13 @@ import {
 } from 'lucide-react';
 import RoleCard from '../ui/RoleCard';
 import gsap from 'gsap';
+import { useNavigate } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   const { activeRole, setActiveRole } = usePortfolio();
   const heroRef = useRef<HTMLDivElement>(null);
   const parallaxRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
 
   // Set up parallax effect
   useEffect(() => {
@@ -154,7 +156,7 @@ const Hero: React.FC = () => {
           </p>
 
           <motion.button
-            onClick={scrollToContent}
+            onClick={() => navigate('/about')}
             className="cta-button group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-primary-500 to-secondary-500 p-0.5 text-sm font-medium text-gray-900 hover:text-white dark:text-white"
             whileHover={{ y: -3 }}
             transition={{ duration: 0.3 }}

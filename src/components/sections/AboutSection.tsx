@@ -81,7 +81,7 @@ const AboutSection: React.FC = () => {
     {
       year: '2008-2013',
       title: 'Primary Education',
-      description: 'Started my academic journey at St. Mary\'s School, where my fascination with computers began. I was fortunate to have access to a computer lab where I wrote my first HTML code.',
+      description: 'Started my academic journey at Adarsh Shiksha Shishu Niketan School, where my fascination with computers began. I was fortunate to have access to a computer lab where I draw and write application on MS-Word.',
       icon: <School size={24} className="text-primary-600 dark:text-primary-400" />,
       achievements: [
         'Won first place in the school science fair with a basic website project',
@@ -96,7 +96,7 @@ const AboutSection: React.FC = () => {
     {
       year: '2013-2020',
       title: 'Secondary Education',
-      description: 'Attended Lincoln High School where I dove deeper into programming through after-school coding clubs and participated in various tech competitions.',
+      description: 'Attended Govt. Boys Senior Secondary School where I dove deeper into programming through after-school coding clubs and participated in various tech competitions.',
       icon: <BookOpen size={24} className="text-primary-600 dark:text-primary-400" />,
       achievements: [
         'Developed a school event management system as my final project',
