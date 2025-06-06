@@ -8,6 +8,7 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   date: string;
+  doneBy : "Team" | "Solo";
   codeSnippet?: CodeSnippet;
 }
 

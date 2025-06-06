@@ -22,8 +22,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg flex flex-col h-full"
+      className="relative bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg flex flex-col h-full"
     >
+      <div className="absolute top-3 right-3 z-10  bg-black/70 text-white text-xs font-semibold px-3 py-1 rounded-md shadow">
+        {project.doneBy}
+      </div>
       <div className="relative overflow-hidden group">
         <img
           src={project.imageUrl}
@@ -42,11 +45,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       <div className="p-5 flex-grow">
         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{project.title}</h3>
         <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
-        
+
         <div className="flex flex-wrap gap-2 mb-4">
           {project.techStack.map((tech) => (
-            <span 
-              key={tech} 
+            <span
+              key={tech}
               className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium rounded"
             >
               {tech}
@@ -65,9 +68,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
         <span className="text-sm text-gray-500 dark:text-gray-400">{project.date}</span>
         <div className="flex gap-3">
           {project.githubUrl && (
-            <a 
-              href={project.githubUrl} 
-              target="_blank" 
+            <a
+              href={project.githubUrl}
+              target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition"
               aria-label="View source code on GitHub"
@@ -76,9 +79,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             </a>
           )}
           {project.liveUrl && (
-            <a 
-              href={project.liveUrl} 
-              target="_blank" 
+            <a
+              href={project.liveUrl}
+              target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition"
               aria-label="Visit live site"
