@@ -38,7 +38,7 @@ const Header: React.FC = () => {
             className="flex items-center space-x-4"
           >
             <Link to="/" className="text-2xl font-bold text-gray-900 dark:text-white">
-              <img src="/src/images/logo.png" alt="Logo" className="h-20" />
+              <img src="https://res.cloudinary.com/amanupadhyay1211/image/upload/v1749749026/logo_cx3alz.png" alt="Logo" className="h-20" />
             </Link>
             <Link
               to="/about"
