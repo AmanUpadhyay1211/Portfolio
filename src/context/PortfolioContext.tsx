@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
-import { Role, Project, BlockchainProject, ContentItem, Stats } from '../types';
+import { Role, Project, ContentItem, Stats } from '../types';
 import { projects } from '../data/projects';
 import { blockchainProjects } from '../data/blockchain';
 import fetchYouTubeVideos from '../data/fetchYoutubeVideo';
@@ -10,7 +10,7 @@ interface PortfolioContextType {
   activeRole: Role;
   setActiveRole: (role: Role) => void;
   projects: Project[];
-  blockchainProjects: BlockchainProject[];
+  blockchainProjects: Project[];
   filteredContent: ContentItem[];
   contentFilter: string;
   setContentFilter: (filter: string) => void;
@@ -20,7 +20,7 @@ interface PortfolioContextType {
 const initialStats: Stats = {
   projects: 0,
   githubStars: 0,
-  certificates: 8,
+  certificates: 4,
   youtube: {
     subscribers: 0,
     videos: 0,
@@ -63,7 +63,7 @@ export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ chi
         setStats(prev => ({
           ...prev,
           projects: reposResponse.data.length,
-          githubStars: totalStars
+          githubStars: 10
         }));
       } catch (error) {
         console.error('Error fetching GitHub data:', error);

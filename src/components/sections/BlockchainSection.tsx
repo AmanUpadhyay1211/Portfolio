@@ -2,10 +2,10 @@ import React, { useRef, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { usePortfolio } from '../../context/PortfolioContext';
-import BlockchainCard from '../ui/BlockchainCard';
 import AnimatedCounter from '../ui/AnimatedCounter';
 import gsap from 'gsap';
 import { Database, Award, BarChart } from 'lucide-react';
+import ProjectCard from '../ui/ProjectCard';
 
 const BlockchainSection: React.FC = () => {
   const { blockchainProjects, stats } = usePortfolio();
@@ -81,7 +81,7 @@ const BlockchainSection: React.FC = () => {
               <div className="w-12 h-12 bg-secondary-100 dark:bg-secondary-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Database size={24} className="text-secondary-600 dark:text-secondary-400" />
               </div>
-              <AnimatedCounter end={8} />
+              <AnimatedCounter end={5} />
               <p className="text-gray-500 dark:text-gray-400 mt-1">DApps Deployed</p>
             </motion.div>
             
@@ -156,7 +156,7 @@ const BlockchainSection: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {blockchainProjects.map((project, index) => (
-              <BlockchainCard key={project.id} project={project} index={index} />
+              <ProjectCard key={project.id} project={project as any} index={index} />
             ))}
           </div>
         </div>

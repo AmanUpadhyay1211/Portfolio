@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Github, ExternalLink, Code } from 'lucide-react';
+import { Github, ExternalLink, Lock } from 'lucide-react';
 import { Project } from '../../types';
 import CodeSnippet from './CodeSnippet';
 
@@ -67,7 +67,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       <div className="px-5 pb-5 pt-2 border-t border-gray-200 dark:border-gray-700 flex justify-between">
         <span className="text-sm text-gray-500 dark:text-gray-400">{project.date}</span>
         <div className="flex gap-3">
-          {project.githubUrl && (
+          {project.githubUrl ? (
             <a
               href={project.githubUrl}
               target="_blank"
@@ -77,6 +77,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             >
               <Github size={20} />
             </a>
+          ) : (
+            <span
+              className="flex items-center text-gray-400 dark:text-gray-600 cursor-not-allowed"
+              title="Private Repository"
+            >
+              <Github size={20} className="mr-1" />
+              <Lock size={16} />
+            </span>
           )}
           {project.liveUrl && (
             <a

@@ -84,7 +84,7 @@ const AboutSection: React.FC = () => {
       description: 'Started my academic journey at Adarsh Shiksha Shishu Niketan School, where my fascination with computers began. I was fortunate to have access to a computer lab where I draw and write application on MS-Word.',
       icon: <School size={24} className="text-primary-600 dark:text-primary-400" />,
       achievements: [
-        'Won first place in the school science fair with a basic website project',
+        'Use MS Paint to draw and write applications on MS-Word',
         'Selected as computer lab assistant in 5th grade'
       ],
       learnings: [
@@ -99,11 +99,11 @@ const AboutSection: React.FC = () => {
       description: 'Attended Govt. Boys Senior Secondary School where I dove deeper into programming through after-school coding clubs and participated in various tech competitions.',
       icon: <BookOpen size={24} className="text-primary-600 dark:text-primary-400" />,
       achievements: [
-        'Developed a school event management system as my final project',
-        'Led the school\'s programming club'
+        'Make Excels sheets of result for entire friends group',
+        'Make Complex Programs in C++'
       ],
       learnings: [
-        'Understanding the value of teamwork in software development',
+        'Understanding the things like MS-Word, Operating System',
         'Learning to balance technical skills with project management'
       ],
       // image: '/images/memories/secondary.jpg'
@@ -111,11 +111,11 @@ const AboutSection: React.FC = () => {
     {
       year: '2021-2024',
       title: 'Computer Science Degree',
-      description: 'Pursued my Bachelor\'s in Computer Science at Tech University, specializing in web development and distributed systems.',
+      description: 'Pursued my Bachelor\'s in Computer Science at INDRA GANDHI NATINAL Open University, specializing in web development and distributed systems.',
       icon: <Award size={24} className="text-primary-600 dark:text-primary-400" />,
       achievements: [
-        'Published two research papers on blockchain technology',
-        'Completed internship at a leading tech company',
+        'Make a pretty good final year project',
+        'Completed internship at a startup tech company',
         'Graduated with honors'
       ],
       learnings: [
@@ -127,15 +127,15 @@ const AboutSection: React.FC = () => {
     {
       year: '2024-Present',
       title: 'First Developer Role',
-      description: 'Joined a startup as a Junior Full Stack Developer, working on their main product and gaining invaluable real-world experience.',
+      description: 'Joined a startup as a Full Stack Developer Intern, working on their major product and gaining invaluable real-world experience.',
       icon: <Briefcase size={24} className="text-primary-600 dark:text-primary-400" />,
       achievements: [
-        'Promoted to Senior Developer within 18 months',
-        'Led the implementation of the company\'s new microservices architecture'
+        'Promoted to Junior Developer within 6 months',
+        'Work on many blockchain and complex backend projects'
       ],
       learnings: [
         'The significance of writing clean, maintainable code',
-        'How to effectively communicate technical concepts to non-technical stakeholders'
+        'The Debugging process, code with calm mind'
       ],
       // image: '/images/memories/devrole.jpg'
     }
