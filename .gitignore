@@ -1,2 +1,71 @@
-node_modules
+# dependencies
+node_modules/
+
+# dotenv environment variables
 .env
+.env.*
+
+# production
+dist/
+build/
+out/
+
+# misc
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code settings
+.vscode/
+
+# local coverage reports
+coverage/
+*.lcov
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Mac system files
+.DS_Store
+
+# Linux system files
+*~
+
+# Parcel cache
+.cache/
+
+# Storybook build outputs
+storybook-static/
+
+# JetBrains IDEs
+.idea/
+
+# SvelteKit build
+.svelte-kit/
+
+# Vite cache
+.vite/
