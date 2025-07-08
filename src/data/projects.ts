@@ -14,6 +14,18 @@ export const projects: Project[] = [
     date: '2024-08-16',
   },
   {
+    id: 'p1.1',
+    title: 'Scrap⚡lash - AI-powered Web Scrapping Platform',
+    description: 'Transform any company name, URL, or search query into comprehensive business intelligence. Get contact information, tech stack details, and competitive insights in seconds.',
+    imageUrl: 'https://res.cloudinary.com/amanupadhyay1211/image/upload/v1751993687/Scraplash_ctdwyl.png',
+    techStack: ['Next.js', 'Clerk','Gemini-AI','Redux','MongoDB'],
+    // videoUrl: 'https://youtu.be/--r4cjsCgpY',
+     githubUrl: 'https://github.com/AmanUpadhyay1211/Scrap-lash',
+    liveUrl: 'https://scrap-lash.vercel.app/',
+    doneBy : "Solo",
+    date: '2025-07-05',
+  },
+  {
     id: 'p2',
     title: 'Gramkit - Advanced TGram Bot Framework',
     description: 'A production-ready Telegram bot starter kit built with Grammy.js. Features Redis session management, MongoDB integration, TypeScript support, and Docker deployment.',
